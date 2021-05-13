@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>St Mary's Wedding Fee Calculator</title>
+
+</head>
+
+<body>
+
+  <h1>St Mary's Wedding Fee Calculator</h1>
+
+  <p>This is a quick and dirty tool. Please don't use it in anger.</p>
+
+  <h2>Optional Extras</h2>
+
+  <h3>Building</h3>
+
+  <ul>
+    <li><input type="checkbox" id="extraBells"> <label for="extraBells">Bells</label></li>
+  </ul>
+
+  <h3>Music</h3>
+
+  <ul>
+    <li><input type="checkbox" id="extraChoir"> <label for="extraChoir">Choir</label></li>
+    <li><input type="checkbox" id="extraSoloist"> <label for="extraSoloist">Soloist</label></li>
+  </ul>
+
+  <h3>Video</h3>
+
+  <ul>
+    <li><input type="checkbox" id="extraOwnVideo"> <label for="extraOwnVideo">Permission to record <i>with own videographer</i></label></li>
+    <li><input type="checkbox" id="extraInHouseVideo"> <label for="extraInHouseVideo">Streaming of service</label>
+      <ul id="extraMemoryStickCheckbox" hidden>
+        <li><input type="checkbox" id="extraMemoryStick"> <label for="extraMemoryStick">Record service to memory stick</label></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Total Cost</h2>
+
+  <button onclick="calculateCost()">Calculate total</button>
+
+  <p><b><span id="total"></span></b></p>
+
+  <h3 id="includesHeader" hidden>This fee includes</h3>
+
+  <div id="includesList"></div>
+
+  <script src="fee-calculator.js"></script>
+
+</body>
+
+</html>
