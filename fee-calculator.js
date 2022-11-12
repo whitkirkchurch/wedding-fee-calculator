@@ -1,9 +1,9 @@
 const baseIncludes = [
-  ["Reading of banns", 31],
-  ["Basic service cost", 464],
-  ["Church building/overheads cost", 20],
+  ["PCC", 324],
+  ["Diocese", 240],
+  ["Heating fee", 20],
   ["Verger's fee", 40],
-  ["Organist's fee", 95]
+  ["Organist's fee", 120]
 ]
 
 const bellsItem = ["Ringing of bells", 50]
@@ -11,13 +11,13 @@ const bellsItem = ["Ringing of bells", 50]
 const choirItem = ["Choir's fee", 140]
 const soloistItem = ["Soloist's fee", 40]
 
-const erpOrganistItem = ["Permission to record organist's performance", 48]
+const erpOrganistItem = ["Permission to record organist's performance", 60]
 const erpChoirItem = ["Permission to record choir's performance", 70]
 const erpSoloistItem = ["Permission to record soloist's performance", 20]
 
 const streamingItem = ["Live streaming of the service", 100]
 
-const technicianItem = ["AV technician's fee", 95]
+const technicianItem = ["AV technician's fee", 96]
 
 const memoryStickItem = ["Copy of service stream on a memory stick", 10]
 
