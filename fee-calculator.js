@@ -18,7 +18,7 @@ const erpSoloistItem = ["Permission to record soloist's performance", 20]
 
 const streamingItem = ["Live streaming of the service", 100]
 
-const technicianItem = ["AV technician's fee", 96]
+const technicianItem = ["AV technician's fee", 95]
 
 const memoryStickItem = ["Copy of service stream on a memory stick", 10]
 
