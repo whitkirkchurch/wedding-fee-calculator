@@ -1,6 +1,5 @@
 const baseIncludes = [
   ["Reading of banns", 36],
-  ["Banns certificate", 18],
   ["Fee to the PCC", 290],
   ["Fee to the Diocese", 241],
   ["Heating fee", 20],
