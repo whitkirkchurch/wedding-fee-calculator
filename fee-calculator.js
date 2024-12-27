@@ -33,7 +33,6 @@ function calculateCost() {
 
   const extraOwnVideo = document.getElementById('extraOwnVideo').checked
   const extraInHouseVideo = document.getElementById('extraInHouseVideo').checked
-  const extraMemoryStick = document.getElementById('extraMemoryStick').checked
 
   if (extraBells) {
     includes.push(bellsItem)
