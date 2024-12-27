@@ -1,7 +1,7 @@
 const baseIncludes = [
-  ["Reading of banns", 36],
-  ["Fee to the PCC", 290],
-  ["Fee to the Diocese", 241],
+  ["Reading of banns", 37],
+  ["Fee to the PCC", 297],
+  ["Fee to the Diocese", 247],
   ["Heating fee", 20],
   ["Verger's fee", 40],
   ["Organist's fee", 120]
@@ -20,7 +20,7 @@ const streamingItem = ["Live streaming of the service", 100]
 
 const technicianItem = ["AV technician's fee", 95]
 
-const memoryStickItem = ["Copy of service stream on a memory stick", 10]
+const memoryStickItem = ["Copy of service stream on a memory stick", 0]
 
 function calculateCost() {
 
@@ -33,7 +33,6 @@ function calculateCost() {
 
   const extraOwnVideo = document.getElementById('extraOwnVideo').checked
   const extraInHouseVideo = document.getElementById('extraInHouseVideo').checked
-  const extraMemoryStick = document.getElementById('extraMemoryStick').checked
 
   if (extraBells) {
     includes.push(bellsItem)
@@ -64,10 +63,7 @@ function calculateCost() {
 
     includes.push(streamingItem)
     includes.push(technicianItem)
-
-    if (extraMemoryStick) {
-      includes.push(memoryStickItem)
-    }
+    includes.push(memoryStickItem)
   }
 
   updateTotal(includes)
@@ -92,13 +88,3 @@ function updateTotal(includes) {
   document.getElementById("total").innerHTML = `£${totalCost}`
   document.getElementById('includesList').innerHTML = includesList
 }
-
-const extraInHouseVideoCheckbox = document.getElementById('extraInHouseVideo')
-
-extraInHouseVideoCheckbox.addEventListener('change', (event) => {
-  if (event.currentTarget.checked) {
-    document.getElementById("extraMemoryStickCheckbox").style.display = "block"
-  } else {
-    document.getElementById("extraMemoryStickCheckbox").style.display = "none";
-  }
-})
